@@ -1,0 +1,2 @@
+menuItem /Library/Fonts/verdana.ttf 15
+menuTitle /Library/Fonts/verdana.ttf 50

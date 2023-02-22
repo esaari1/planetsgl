@@ -1,0 +1,26 @@
+hubble {
+   Type        "3ds"
+   Path        "resources/models/3ds/"
+   File        "hubble.3ds"
+}
+
+ywing {
+   Type        "medit"
+   File        "resources/models/medit/Y-WINGF.medit"
+   Clockwise   "true"
+   Scale       0.001
+}
+
+StationV {
+   Type        "medit"
+   File        "resources/models/medit/stationV_new.medit"
+   Clockwise   "true"
+   Scale       0.02
+}
+
+Enterprise {
+   Type        "cmod"
+   Path        "resources/models/cmod/enterprise/"
+   File        "1701a.cmod"
+   Scale       0.02
+}

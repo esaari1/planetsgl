@@ -1,0 +1,177 @@
+# Units
+#     Period             Julian Years
+#     LongAtEpoch        Degrees
+#     LongOfPerihelion   Degrees
+#     Eccentricity       -
+#     SemiMajorAxis      AU
+#     Inclination        Degrees
+#     AscendingNode      Degrees
+#     Radius             Kilometers
+
+Sun {
+   Name              "Sun"
+   Texture           "resources/sun/sunmap.jpg"
+   Color             [ 0.9 0.8 0.6 1.0 ]
+   Radius            695500.0
+}
+
+Body {
+   Name              "Mercury"
+	Period            0.240852
+   LongAtEpoch       60.750646
+   LongOfPerihelion  77.299833
+   Eccentricity      0.205633
+   SemiMajorAxis     0.387099
+   Inclination       7.004540
+   AscendingNode     48.212740
+   Radius            2439.7
+   
+   Texture           "resources/mercury/mercury.jpg"
+}
+
+Body {
+   Name              "Venus"
+	Period            0.615211
+   LongAtEpoch       88.455855
+   LongOfPerihelion  131.430236
+   Eccentricity      0.006778
+   SemiMajorAxis     0.723332
+   Inclination       3.394535
+   AscendingNode     76.589820
+   Radius            6051.8
+   
+   Texture           "resources/venus/venus_cloud.jpg"
+}
+
+Body {
+   Name              "Earth"
+   Shader            "earth"
+   ShaderUniforms    [ "EarthDay" "EarthNight" "EarthCloud" ]
+   Period            1.00004
+   LongAtEpoch       99.403308
+   LongOfPerihelion  102.768413
+   Eccentricity      0.016713
+   SemiMajorAxis     1.0
+   Inclination       0.0
+   AscendingNode     0.0
+   Radius            6378.14
+   
+   Texture           "resources/earth/8081_earthmap4k.jpg"
+   NightTexture      "resources/earth/8081_earthlights4k.jpg"
+   SkyTexture        "resources/earth/8081_earthhiresclouds4K.jpg"
+   SkyTextureMask    "resources/earth/8081_earthspec4k-2.jpg"
+   
+   Atmosphere {
+      Color    [ 0.161 0.384 0.498 ]
+      Height   600.0
+   }
+}
+
+Body {
+   Name              "Mars"
+   Period            1.880932
+   LongAtEpoch       240.739474
+   LongOfPerihelion  335.874939
+   Eccentricity      0.093396
+   SemiMajorAxis     1.523688
+   Inclination       1.849736
+   AscendingNode     49.480308
+   Radius            3376.2
+   
+   Texture           "resources/mars/mars_4k_color.jpg"
+}
+
+Body {
+   Name              "Jupiter"
+   Period            11.863075
+   LongAtEpoch       90.638185
+   LongOfPerihelion  14.170747
+   Eccentricity      0.048482
+   SemiMajorAxis     5.202561
+   Inclination       1.303613
+   AscendingNode     100.353142
+   Radius            71492.1
+   
+   Texture           "resources/jupiter/jupiter2_4k.jpg"
+}
+
+Body {
+   Name              "Saturn"
+   Period            29.471362
+   LongAtEpoch       287.690033
+   LongOfPerihelion  92.861407
+   Eccentricity      0.055581
+   SemiMajorAxis     9.554747
+   Inclination       2.488980
+   AscendingNode     113.576139
+   Radius            60268.0
+   
+   Texture           "resources/saturn/saturnmap.jpg"
+   
+   Rings {
+      Inner          74500.0
+      Outer          140220.0
+      Texture        "resources/saturn/saturn-rings.png"
+   }
+}
+
+Body {
+   Name              "Uranus"
+   Period            84.039492
+   LongAtEpoch       271.063148
+   LongOfPerihelion  172.884833
+   Eccentricity      0.046321
+   SemiMajorAxis     19.21814
+   Inclination       0.773059
+   AscendingNode     73.926961
+   Radius            25559.0
+}
+
+Body {
+   Name              "Neptune"
+   Period            164.79246
+   LongAtEpoch       282.349556
+   LongOfPerihelion  48.009758
+   Eccentricity      0.009003
+   SemiMajorAxis     30.109570
+   Inclination       1.770646
+   AscendingNode     131.670599
+   Radius            24764.0
+}
+
+Body {
+   Name              "Pluto"
+   Period            246.77027
+   LongAtEpoch       221.4127
+   LongOfPerihelion  224.133
+   Eccentricity      0.24624
+   SemiMajorAxis     39.3414
+   Inclination       17.1420
+   AscendingNode     110.144
+   Radius            1151.0
+}
+
+Model {
+   Name              "StationV"
+   Parent            "Earth"
+   Period            0.002739726027397
+   LongAtEpoch       180.0
+   LongOfPerihelion  0.0
+   Eccentricity      0.0
+   SemiMajorAxis     0.00004939905613711
+   Inclination       0.0
+   AscendingNode     0.0
+}
+
+Model {
+   Name              "Enterprise"
+   Parent            "Mars"
+   Period            0.002739726027397
+   LongAtEpoch       180.0
+   LongOfPerihelion  0.0
+   Eccentricity      0.0
+   SemiMajorAxis     0.00004939905613711
+   Inclination       0.0
+   AscendingNode     0.0
+   Scale             0.02
+}
